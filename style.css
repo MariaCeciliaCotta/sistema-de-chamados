@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    background-color: #ffffff;
+    border-bottom: 2px solid #2563eb;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 23px;
+    color: #2563eb;
+}
+
+.nav-list ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: #2563eb;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.home {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 40px;
+}
+
+.home h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 25px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.home-button {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 180px;
+
+    background-color: #ffffff;
+    border: 2px solid #2563eb;
+    border-radius: 12px;
+
+    text-decoration: none;
+    color: #2563eb;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.home-button:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.explicacao {
+    max-width: 900px;
+    margin-top: 60px;
+}
+
+.explicacao h2 {
+    font-size: 24px;
+}
+
+.explicacao p {
+    color: #555;
+}
+
+.page-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px 30px;
+}
+
+.page-container>h2 {
+    margin-top: 40px;
+}
+
+details {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+
+    border: 1px solid #ddd;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+button {
+    padding: 11px 20px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #2563eb;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.choice-buttons {
+    display: flex;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.chamado {
+    background-color: #ffffff;
+
+    padding: 25px;
+    margin: 25px auto;
+
+    max-width: 900px;
+
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.chamado p {
+    margin: 6px 0;
+}
+
+.status-form {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.status-form select {
+    width: auto;
+    margin: 0;
+}
+
+.responsavel {
+    background-color: #ffffff;
+
+    padding: 20px;
+    margin: 20px 0;
+
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 700px) {
+
+    .nav-bar {
+        padding: 0 20px;
+    }
+
+    .nav-list ul {
+        gap: 12px;
+    }
+
+    .nav-list a {
+        font-size: 13px;
+    }
+
+    .logo h1 {
+        font-size: 18px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .home-button {
+        height: 130px;
+    }
+}
